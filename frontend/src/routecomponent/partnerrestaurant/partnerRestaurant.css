@@ -1,0 +1,126 @@
+.partnerRestaurant .restaurantData {
+  border: 1px solid rgb(108, 106, 106);
+  /* margin: 7rem 10vw 1rem 10vw; */
+  margin: 2rem 0;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.partnerRestaurant .restaurantData .t1{
+  margin: 0.3rem 0;
+  color: rgb(36, 36, 36);
+}
+
+.partnerRestaurant .restaurantData .t2{
+ font-size: 1.1rem;
+}
+
+.partnerRestaurant .restaurantData .t3{
+  color: rgb(68, 67, 67);
+ }
+
+.partnerRestaurant .restaurant-section {
+  margin: 7rem 10vw 1rem 10vw;
+}
+
+.partnerRestaurant .restaurantData .image img {
+  width: 100%;
+}
+.partnerRestaurant .restaurantData .image {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.partnerRestaurant .restaurantData .dot {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  border: none;
+  color: #101010;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.partnerRestaurant .restaurantData .restaurantOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  border: none;
+  color: #101010;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  border: 1px solid black;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.partnerRestaurant .restaurantData .restaurantOption button {
+  width: 100%;
+  padding: 2px 12px;
+}
+
+.partnerRestaurant .restaurantData .dot:hover {
+  cursor: default;
+  background-color: rgb(159, 159, 159);
+  border-radius: 50%;
+}
+
+.partnerRestaurant .restaurantData .showDeleteRestaurantOption {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerRestaurant .restaurantData .showDeleteRestaurantOption .box {
+    border: 1px solid rgb(136, 134, 134);
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .partnerRestaurant .restaurantData .showDeleteRestaurantOption .box .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .partnerRestaurant .restaurantData .showDeleteRestaurantOption .box .button button{
+    padding: 6px 12px;
+    font-size: 1.1rem;
+  }
+
+@media screen and (max-width: 500px) {
+  .partnerRestaurant .restaurantData .dot {
+    bottom: 2.5rem;
+    padding: 2px;
+    font-size: 1rem;
+  }
+}

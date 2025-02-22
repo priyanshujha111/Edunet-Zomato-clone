@@ -1,0 +1,102 @@
+.CreateRestaurant .res-dtl,
+.owner-dtl {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 4px;
+  /* box-shadow: 0 0 10px 5px rgba(14, 14, 14, 0.5); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.CreateRestaurant .button button{
+  width: 4rem;
+  margin: 2rem 4px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.CreateRestaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.CreateRestaurant .res-dtl input,
+.owner-dtl input {
+  width: 20rem;
+  height: 1.5rem;
+  padding-left: 4px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.CreateRestaurant .res-dtl input:focus,
+.owner-dtl input:focus {
+  outline: none;
+}
+
+.CreateRestaurant .res-img,
+.res-timing,
+.cuisine-type,
+.res-type,
+.res-des {
+  margin: 2rem 0 1rem 0;
+}
+
+.CreateRestaurant .res-type-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.CreateRestaurant .res-type-option .item {
+  display: flex;
+  column-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreateRestaurant .res-des-option, .CreateRestaurant .cuisine-type-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem 1rem ;
+    border: 1px solid black;
+  padding: 1rem;
+  border-radius: 4px;
+  /* box-shadow: 0 0 10px 5px rgba(14, 14, 14, 0.5); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.CreateRestaurant .res-des-option .item, .CreateRestaurant .cuisine-type-option .item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+@media screen and (max-width:1000px){
+  .CreateRestaurant .res-des-option, .CreateRestaurant .cuisine-type-option {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+@media screen and (max-width:825px){
+  .CreateRestaurant .res-des-option, .CreateRestaurant .cuisine-type-option {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (max-width:550px){
+  .CreateRestaurant .res-des-option, .CreateRestaurant .cuisine-type-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem ;
+}
+}

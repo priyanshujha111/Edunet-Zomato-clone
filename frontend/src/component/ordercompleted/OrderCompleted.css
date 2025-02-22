@@ -1,0 +1,11 @@
+.OrderCompleted {
+  background: rgb(235, 235, 236);
+  padding: 1rem 0;
+}
+.OrderCompleted .order-details {
+  color: black;
+  margin: 1.5rem 10vw;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+}
